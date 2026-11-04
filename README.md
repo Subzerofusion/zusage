@@ -20,18 +20,20 @@ Note: the values shown are **plan credits**, not raw tokens. Z.ai's coding plan 
 
 ## Installation
 
-### Via npx (recommended)
+> **Note:** install from GitHub — the `zusage` package on the npm registry is the old, unmaintained version and does not work with Z.ai's current API.
+
+### Run once via npx (recommended)
 
 No installation needed - just run:
 
 ```bash
-npx -y zusage@latest
+npx github:Subzerofusion/zusage
 ```
 
 ### Or install globally
 
 ```bash
-npm install -g zusage
+npm install -g github:Subzerofusion/zusage
 ```
 
 ## Usage
@@ -42,10 +44,10 @@ Set your `ANTHROPIC_AUTH_TOKEN` environment variable to a coding-plan key. Get i
 export ANTHROPIC_AUTH_TOKEN="your_token_here"
 
 # Via npx
-npx -y zusage@latest
+npx github:Subzerofusion/zusage
 
 # Script-friendly output
-npx -y zusage@latest --json
+npx github:Subzerofusion/zusage --json
 ```
 
 ## Example Output
